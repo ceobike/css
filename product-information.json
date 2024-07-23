@@ -1,0 +1,794 @@
+{
+    "post_type": "meta-box",
+    "post_name": "product-information",
+    "post_title": "Product Information",
+    "post_date": "2024-07-22 13:51:47",
+    "post_status": "publish",
+    "post_content": "",
+    "settings": {
+        "object_type": "post",
+        "post_types": [
+            "product"
+        ],
+        "context": "normal",
+        "priority": "high",
+        "style": "default",
+        "closed": false,
+        "default_hidden": false,
+        "autosave": false,
+        "revision": false,
+        "tab_style": "",
+        "tab_default_active": "",
+        "custom_table": {
+            "enable": false,
+            "name": "",
+            "prefix": false,
+            "create": false
+        },
+        "class": "",
+        "prefix": "",
+        "text_domain": "your-text-domain",
+        "function_name": "your_prefix_function_name"
+    },
+    "fields": {
+        "tab_3q2s11q8aew": {
+            "_id": "tab_3q2s11q8aew",
+            "name": "Quantity Based Pricing",
+            "id": "quantity_based_pricing",
+            "type": "tab",
+            "icon_type": "dashicons",
+            "icon_fa": "",
+            "icon_url": "",
+            "admin_columns": {
+                "enable": false,
+                "position": {
+                    "type": "after",
+                    "column": "title"
+                },
+                "title": "",
+                "before": "",
+                "after": "",
+                "sort": false,
+                "searchable": false,
+                "filterable": false,
+                "link": false
+            },
+            "columns": 12,
+            "tooltip": {
+                "enable": false,
+                "icon": "",
+                "position": "top",
+                "content": ""
+            },
+            "hide_from_rest": false,
+            "hide_from_front": false
+        },
+        "checkbox_l71y31dfdye": {
+            "_id": "checkbox_l71y31dfdye",
+            "name": "Enable Discount",
+            "id": "enable_discount",
+            "type": "checkbox",
+            "label_description": "",
+            "desc": "",
+            "std": false,
+            "required": false,
+            "clone": false,
+            "sort_clone": false,
+            "clone_default": false,
+            "clone_as_multiple": false,
+            "min_clone": "",
+            "max_clone": "",
+            "add_button": "",
+            "admin_columns": {
+                "enable": false,
+                "position": {
+                    "type": "after",
+                    "column": "title"
+                },
+                "title": "",
+                "before": "",
+                "after": "",
+                "sort": false,
+                "searchable": false,
+                "filterable": false,
+                "link": false
+            },
+            "columns": 12,
+            "tooltip": {
+                "enable": false,
+                "icon": "",
+                "position": "top",
+                "content": ""
+            },
+            "hide_from_rest": false,
+            "hide_from_front": false,
+            "before": "",
+            "after": "",
+            "class": "",
+            "sanitize_callback": "",
+            "save_field": true
+        },
+        "select_2cxf6yq6nk7": {
+            "_id": "select_2cxf6yq6nk7",
+            "name": "Discount Type",
+            "id": "discount_type",
+            "type": "radio",
+            "label_description": "Apply a percentage or a fixed amount discount",
+            "desc": "",
+            "options": "percentage:Percentage off product price\r\nfixed:Fixed amount off product price",
+            "std": "percentage",
+            "inline": false,
+            "required": false,
+            "clone": false,
+            "sort_clone": false,
+            "clone_default": false,
+            "clone_as_multiple": false,
+            "min_clone": "",
+            "max_clone": "",
+            "add_button": "",
+            "admin_columns": {
+                "enable": false,
+                "position": {
+                    "type": "after",
+                    "column": "title"
+                },
+                "title": "",
+                "before": "",
+                "after": "",
+                "sort": false,
+                "searchable": false,
+                "filterable": false,
+                "link": false
+            },
+            "columns": 12,
+            "tooltip": {
+                "enable": false,
+                "icon": "",
+                "position": "top",
+                "content": ""
+            },
+            "hide_from_rest": false,
+            "hide_from_front": false,
+            "before": "",
+            "after": "",
+            "class": "",
+            "sanitize_callback": "",
+            "save_field": true
+        },
+        "select_oucexk0i1f": {
+            "_id": "select_oucexk0i1f",
+            "name": "Rules Type",
+            "id": "rules_type",
+            "type": "radio",
+            "label_description": "If Intervals, the intervals rules will be used.%sIf Steps, the steps rules will be used.",
+            "desc": "",
+            "options": "intervals:Intervals\r\nsteps:Steps",
+            "std": "intervals",
+            "inline": false,
+            "required": false,
+            "clone": false,
+            "sort_clone": false,
+            "clone_default": false,
+            "clone_as_multiple": false,
+            "min_clone": "",
+            "max_clone": "",
+            "add_button": "",
+            "admin_columns": {
+                "enable": false,
+                "position": {
+                    "type": "after",
+                    "column": "title"
+                },
+                "title": "",
+                "before": "",
+                "after": "",
+                "sort": false,
+                "searchable": false,
+                "filterable": false,
+                "link": false
+            },
+            "columns": 12,
+            "tooltip": {
+                "enable": false,
+                "icon": "",
+                "position": "top",
+                "content": ""
+            },
+            "hide_from_rest": false,
+            "hide_from_front": false,
+            "before": "",
+            "after": "",
+            "class": "",
+            "sanitize_callback": "",
+            "save_field": true
+        },
+        "group_clm4gfoq066": {
+            "_id": "group_clm4gfoq066",
+            "name": "Intervals Rules",
+            "id": "rules",
+            "type": "group",
+            "label_description": "If Intervals, the intervals rules will be used.%sIf Steps, the steps rules will be used.",
+            "desc": "",
+            "collapsible": false,
+            "default_state": "expanded",
+            "save_state": false,
+            "group_title": "",
+            "clone": true,
+            "sort_clone": false,
+            "clone_default": false,
+            "clone_as_multiple": false,
+            "min_clone": "",
+            "max_clone": "",
+            "add_button": "",
+            "admin_columns": {
+                "enable": false,
+                "position": {
+                    "type": "after",
+                    "column": "title"
+                },
+                "title": "",
+                "before": "",
+                "after": "",
+                "sort": false,
+                "searchable": false,
+                "filterable": false,
+                "link": false
+            },
+            "columns": 12,
+            "tooltip": {
+                "enable": false,
+                "icon": "",
+                "position": "top",
+                "content": ""
+            },
+            "hide_from_rest": false,
+            "hide_from_front": false,
+            "before": "",
+            "after": "",
+            "class": "",
+            "save_field": true,
+            "sanitize_callback": "",
+            "conditional_logic": {
+                "type": "visible",
+                "relation": "or",
+                "when": {
+                    "fffai8r0uk": {
+                        "id": "fffai8r0uk",
+                        "name": "rules_type",
+                        "operator": "=",
+                        "value": "intervals"
+                    }
+                }
+            },
+            "fields": {
+                "number_st1i30at9g": {
+                    "_id": "number_st1i30at9g",
+                    "name": "Min",
+                    "id": "min",
+                    "type": "number",
+                    "label_description": "",
+                    "desc": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "std": "",
+                    "placeholder": "",
+                    "size": "",
+                    "required": false,
+                    "disabled": false,
+                    "readonly": false,
+                    "prepend": "",
+                    "append": "",
+                    "clone": false,
+                    "sort_clone": false,
+                    "clone_default": false,
+                    "clone_as_multiple": false,
+                    "min_clone": "",
+                    "max_clone": "",
+                    "add_button": "",
+                    "admin_columns": {
+                        "enable": false,
+                        "position": {
+                            "type": "after",
+                            "column": "title"
+                        },
+                        "title": "",
+                        "before": "",
+                        "after": "",
+                        "sort": false,
+                        "searchable": false,
+                        "filterable": false,
+                        "link": false
+                    },
+                    "columns": 12,
+                    "tooltip": {
+                        "enable": false,
+                        "icon": "",
+                        "position": "top",
+                        "content": ""
+                    },
+                    "hide_from_rest": false,
+                    "hide_from_front": false,
+                    "before": "",
+                    "after": "",
+                    "class": "",
+                    "sanitize_callback": "",
+                    "save_field": true
+                },
+                "number_sf3bgeavd7p": {
+                    "_id": "number_sf3bgeavd7p",
+                    "name": "Max",
+                    "id": "max",
+                    "type": "number",
+                    "label_description": "",
+                    "desc": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "std": "",
+                    "placeholder": "",
+                    "size": "",
+                    "required": false,
+                    "disabled": false,
+                    "readonly": false,
+                    "prepend": "",
+                    "append": "",
+                    "clone": false,
+                    "sort_clone": false,
+                    "clone_default": false,
+                    "clone_as_multiple": false,
+                    "min_clone": "",
+                    "max_clone": "",
+                    "add_button": "",
+                    "admin_columns": {
+                        "enable": false,
+                        "position": {
+                            "type": "after",
+                            "column": "title"
+                        },
+                        "title": "",
+                        "before": "",
+                        "after": "",
+                        "sort": false,
+                        "searchable": false,
+                        "filterable": false,
+                        "link": false
+                    },
+                    "columns": 12,
+                    "tooltip": {
+                        "enable": false,
+                        "icon": "",
+                        "position": "top",
+                        "content": ""
+                    },
+                    "hide_from_rest": false,
+                    "hide_from_front": false,
+                    "before": "",
+                    "after": "",
+                    "class": "",
+                    "sanitize_callback": "",
+                    "save_field": true
+                },
+                "number_vo2219i8lra": {
+                    "_id": "number_vo2219i8lra",
+                    "name": "Discount",
+                    "id": "discount",
+                    "type": "number",
+                    "label_description": "",
+                    "desc": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "std": "",
+                    "placeholder": "",
+                    "size": "",
+                    "required": false,
+                    "disabled": false,
+                    "readonly": false,
+                    "prepend": "",
+                    "append": "",
+                    "clone": false,
+                    "sort_clone": false,
+                    "clone_default": false,
+                    "clone_as_multiple": false,
+                    "min_clone": "",
+                    "max_clone": "",
+                    "add_button": "",
+                    "admin_columns": {
+                        "enable": false,
+                        "position": {
+                            "type": "after",
+                            "column": "title"
+                        },
+                        "title": "",
+                        "before": "",
+                        "after": "",
+                        "sort": false,
+                        "searchable": false,
+                        "filterable": false,
+                        "link": false
+                    },
+                    "columns": 12,
+                    "tooltip": {
+                        "enable": false,
+                        "icon": "",
+                        "position": "top",
+                        "content": ""
+                    },
+                    "hide_from_rest": false,
+                    "hide_from_front": false,
+                    "before": "",
+                    "after": "",
+                    "class": "",
+                    "sanitize_callback": "",
+                    "save_field": true,
+                    "validation": {
+                        "ev8enba4ac9": {
+                            "id": "ev8enba4ac9",
+                            "name": "step",
+                            "value": "any",
+                            "message": ""
+                        }
+                    }
+                }
+            }
+        },
+        "group_96e2rwzhjtj": {
+            "_id": "group_96e2rwzhjtj",
+            "name": "Steps Rules",
+            "id": "rules_by_step",
+            "type": "group",
+            "label_description": "If quantity ordered is a multiple of the step, then the discount specified will be applied.",
+            "desc": "",
+            "collapsible": false,
+            "default_state": "expanded",
+            "save_state": false,
+            "group_title": "",
+            "clone": true,
+            "sort_clone": false,
+            "clone_default": false,
+            "clone_as_multiple": false,
+            "min_clone": "",
+            "max_clone": "",
+            "add_button": "",
+            "admin_columns": {
+                "enable": false,
+                "position": {
+                    "type": "after",
+                    "column": "title"
+                },
+                "title": "",
+                "before": "",
+                "after": "",
+                "sort": false,
+                "searchable": false,
+                "filterable": false,
+                "link": false
+            },
+            "columns": 12,
+            "tooltip": {
+                "enable": false,
+                "icon": "",
+                "position": "top",
+                "content": ""
+            },
+            "hide_from_rest": false,
+            "hide_from_front": false,
+            "before": "",
+            "after": "",
+            "class": "",
+            "save_field": true,
+            "sanitize_callback": "",
+            "conditional_logic": {
+                "type": "visible",
+                "relation": "or",
+                "when": {
+                    "weajbqm6r5o": {
+                        "id": "weajbqm6r5o",
+                        "name": "rules_type",
+                        "operator": "=",
+                        "value": "steps"
+                    }
+                }
+            },
+            "fields": {
+                "number_txfyxdbkez": {
+                    "_id": "number_txfyxdbkez",
+                    "name": "Every X items",
+                    "id": "every",
+                    "type": "number",
+                    "label_description": "",
+                    "desc": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "std": "",
+                    "placeholder": "",
+                    "size": "",
+                    "required": false,
+                    "disabled": false,
+                    "readonly": false,
+                    "prepend": "",
+                    "append": "",
+                    "clone": false,
+                    "sort_clone": false,
+                    "clone_default": false,
+                    "clone_as_multiple": false,
+                    "min_clone": "",
+                    "max_clone": "",
+                    "add_button": "",
+                    "admin_columns": {
+                        "enable": false,
+                        "position": {
+                            "type": "after",
+                            "column": "title"
+                        },
+                        "title": "",
+                        "before": "",
+                        "after": "",
+                        "sort": false,
+                        "searchable": false,
+                        "filterable": false,
+                        "link": false
+                    },
+                    "columns": 12,
+                    "tooltip": {
+                        "enable": false,
+                        "icon": "",
+                        "position": "top",
+                        "content": ""
+                    },
+                    "hide_from_rest": false,
+                    "hide_from_front": false,
+                    "before": "",
+                    "after": "",
+                    "class": "",
+                    "sanitize_callback": "",
+                    "save_field": true
+                },
+                "number_lch8ibsusy": {
+                    "_id": "number_lch8ibsusy",
+                    "name": "Discount",
+                    "id": "discount",
+                    "type": "number",
+                    "label_description": "",
+                    "desc": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "std": "",
+                    "placeholder": "",
+                    "size": "",
+                    "required": false,
+                    "disabled": false,
+                    "readonly": false,
+                    "prepend": "",
+                    "append": "",
+                    "clone": false,
+                    "sort_clone": false,
+                    "clone_default": false,
+                    "clone_as_multiple": false,
+                    "min_clone": "",
+                    "max_clone": "",
+                    "add_button": "",
+                    "admin_columns": {
+                        "enable": false,
+                        "position": {
+                            "type": "after",
+                            "column": "title"
+                        },
+                        "title": "",
+                        "before": "",
+                        "after": "",
+                        "sort": false,
+                        "searchable": false,
+                        "filterable": false,
+                        "link": false
+                    },
+                    "columns": 12,
+                    "tooltip": {
+                        "enable": false,
+                        "icon": "",
+                        "position": "top",
+                        "content": ""
+                    },
+                    "hide_from_rest": false,
+                    "hide_from_front": false,
+                    "before": "",
+                    "after": "",
+                    "class": "",
+                    "sanitize_callback": "",
+                    "save_field": true,
+                    "validation": {
+                        "6he1mz2t5ch": {
+                            "id": "6he1mz2t5ch",
+                            "name": "step",
+                            "value": "any",
+                            "message": ""
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [],
+    "meta_box": {
+        "title": "Product Information",
+        "id": "product-information",
+        "post_types": [
+            "product"
+        ],
+        "closed": false,
+        "default_hidden": false,
+        "autosave": false,
+        "revision": false,
+        "text_domain": "your-text-domain",
+        "function_name": "your_prefix_function_name",
+        "validation": {
+            "rules": {
+                "discount": {
+                    "step": "any"
+                }
+            }
+        },
+        "tabs": {
+            "quantity_based_pricing": {
+                "label": "Quantity Based Pricing",
+                "icon": ""
+            }
+        },
+        "fields": {
+            "1": {
+                "name": "Enable Discount",
+                "id": "enable_discount",
+                "type": "checkbox",
+                "required": false,
+                "clone": false,
+                "hide_from_rest": false,
+                "hide_from_front": false,
+                "tab": "quantity_based_pricing"
+            },
+            "2": {
+                "name": "Discount Type",
+                "id": "discount_type",
+                "type": "radio",
+                "label_description": "Apply a percentage or a fixed amount discount",
+                "options": {
+                    "percentage": "Percentage off product price",
+                    "fixed": "Fixed amount off product price"
+                },
+                "std": "percentage",
+                "inline": false,
+                "required": false,
+                "clone": false,
+                "hide_from_rest": false,
+                "hide_from_front": false,
+                "tab": "quantity_based_pricing"
+            },
+            "3": {
+                "name": "Rules Type",
+                "id": "rules_type",
+                "type": "radio",
+                "label_description": "If Intervals, the intervals rules will be used.%sIf Steps, the steps rules will be used.",
+                "options": {
+                    "intervals": "Intervals",
+                    "steps": "Steps"
+                },
+                "std": "intervals",
+                "inline": false,
+                "required": false,
+                "clone": false,
+                "hide_from_rest": false,
+                "hide_from_front": false,
+                "tab": "quantity_based_pricing"
+            },
+            "4": {
+                "name": "Intervals Rules",
+                "id": "rules",
+                "type": "group",
+                "label_description": "If Intervals, the intervals rules will be used.%sIf Steps, the steps rules will be used.",
+                "collapsible": false,
+                "clone": true,
+                "sort_clone": false,
+                "clone_default": false,
+                "clone_as_multiple": false,
+                "hide_from_rest": false,
+                "hide_from_front": false,
+                "fields": [
+                    {
+                        "name": "Min",
+                        "id": "min",
+                        "type": "number",
+                        "required": false,
+                        "disabled": false,
+                        "readonly": false,
+                        "clone": false,
+                        "hide_from_rest": false,
+                        "hide_from_front": false
+                    },
+                    {
+                        "name": "Max",
+                        "id": "max",
+                        "type": "number",
+                        "required": false,
+                        "disabled": false,
+                        "readonly": false,
+                        "clone": false,
+                        "hide_from_rest": false,
+                        "hide_from_front": false
+                    },
+                    {
+                        "name": "Discount",
+                        "id": "discount",
+                        "type": "number",
+                        "required": false,
+                        "disabled": false,
+                        "readonly": false,
+                        "clone": false,
+                        "hide_from_rest": false,
+                        "hide_from_front": false
+                    }
+                ],
+                "visible": {
+                    "when": [
+                        [
+                            "rules_type",
+                            "=",
+                            "intervals"
+                        ]
+                    ],
+                    "relation": "or"
+                },
+                "tab": "quantity_based_pricing"
+            },
+            "5": {
+                "name": "Steps Rules",
+                "id": "rules_by_step",
+                "type": "group",
+                "label_description": "If quantity ordered is a multiple of the step, then the discount specified will be applied.",
+                "collapsible": false,
+                "clone": true,
+                "sort_clone": false,
+                "clone_default": false,
+                "clone_as_multiple": false,
+                "hide_from_rest": false,
+                "hide_from_front": false,
+                "fields": [
+                    {
+                        "name": "Every X items",
+                        "id": "every",
+                        "type": "number",
+                        "required": false,
+                        "disabled": false,
+                        "readonly": false,
+                        "clone": false,
+                        "hide_from_rest": false,
+                        "hide_from_front": false
+                    },
+                    {
+                        "name": "Discount",
+                        "id": "discount",
+                        "type": "number",
+                        "required": false,
+                        "disabled": false,
+                        "readonly": false,
+                        "clone": false,
+                        "hide_from_rest": false,
+                        "hide_from_front": false
+                    }
+                ],
+                "visible": {
+                    "when": [
+                        [
+                            "rules_type",
+                            "=",
+                            "steps"
+                        ]
+                    ],
+                    "relation": "or"
+                },
+                "tab": "quantity_based_pricing"
+            }
+        }
+    }
+}
